@@ -1,0 +1,68 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #b37eb5; /* lite purple background */
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-left: 10px;
+    color: #431654; /* enermal text color */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.phone-icon {
+    color: #431654; /* enermal text color */
+}
+
+.send-otp-btn,
+.verify-otp-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #431654;
+    color: white;
+    cursor: pointer;
+}
+
+.send-otp-btn:hover,
+.verify-otp-btn:hover {
+    background-color: #9b6c9a;
+}
+
+.otp-input {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.otp-input:focus {
+    outline: none;
+    border-color: #9b6c9a;
+}
+
+.send-otp-btn[disabled],
+.verify-otp-btn[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
